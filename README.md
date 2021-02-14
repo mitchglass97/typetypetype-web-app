@@ -1,6 +1,8 @@
 # About typetypetype
 
-![typetypetype picture](https://user-images.githubusercontent.com/52224377/107892483-f82c7d80-6eea-11eb-8457-43ff33300b9d.PNG)
+![typetypetype home page](https://user-images.githubusercontent.com/52224377/107892637-25c5f680-6eec-11eb-8754-d08a8d572268.PNG)
+
+Link: https://typetypetype-webapp.herokuapp.com/
 
 *typetypetype* is a full-stack web app built with the PERN stack (PostgreSQL, Express, React and Node.js). The app keeps running stats of WPM and Accuracy as a user takes the typing speed test. Each instance of the test lasts 60 seconds.
 
