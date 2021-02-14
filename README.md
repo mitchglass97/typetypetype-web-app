@@ -28,7 +28,7 @@ The server (back-end) logic is in the server/index.js file. The file includes 3 
 
 # Frameworks & Libraries 
 
-(Pern Stack)
+PERN stack:
 
 PostgreSQL - Database
 
