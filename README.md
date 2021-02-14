@@ -29,9 +29,13 @@ The server (back-end) logic is in the server/index.js file. The file includes 3 
 # Frameworks & Libraries 
 
 (Pern Stack)
+
 PostgreSQL - Database
+
 Express - Server
+
 React.js - Front-End Framework. Used react-router-dom for front-end page routing.
+
 Node.js - Back-End Framework
 
 letteringJS - this library was used to used to animate individual letters by turning each character in a text string into its own <span> element. The animation (fade and change color) is then performed by applying the "correct" or "incorrect" CSS classes to each span element. Note that letteringJS requires jQuery. http://letteringjs.com/
