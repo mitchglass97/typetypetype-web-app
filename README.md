@@ -1,6 +1,6 @@
 # About typetypetype
 
-![typetypetype home](https://user-images.githubusercontent.com/52224377/107892702-85240680-6eec-11eb-85d1-06688f7b3b08.PNG)
+![type home](https://user-images.githubusercontent.com/52224377/107892717-9f5de480-6eec-11eb-9d7b-5688af372027.PNG)
 
 Link: https://typetypetype-webapp.herokuapp.com/
 
