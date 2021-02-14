@@ -26,7 +26,13 @@ The server (back-end) logic is in the server/index.js file. The file includes 3 
 2) GET all leaderboard scores by querying the PostgreSQL database (when a user visits the Leaderboard page)
 3) A catch-all route that serves the index.html page. Since this app uses React Router DOM for front-end routing, this catch-all is necessary. Without it, the /leaderboard page (or any page besides the home page) would not work after a Refresh, or if a user visited the /leaderboard URL directly without having already been on the homepage. After the catch-all serves the index.html page, React takes over and performs the necessary routing to the Leaderboard page.
 
-# Libraries
+# Frameworks & Libraries 
+
+(Pern Stack)
+PostgreSQL - Database
+Express - Server
+React.js - Front-End Framework. Used react-router-dom for front-end page routing.
+Node.js - Back-End Framework
 
 letteringJS - this library was used to used to animate individual letters by turning each character in a text string into its own <span> element. The animation (fade and change color) is then performed by applying the "correct" or "incorrect" CSS classes to each span element. Note that letteringJS requires jQuery. http://letteringjs.com/
   
