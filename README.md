@@ -42,4 +42,4 @@ letteringJS - this library was used to used to place each character in the test 
   
 momentJS - this library was used to format TIMESTAMPS from PostgreSQL (e.g. turns "2013-03-01T00:00:00+01:00" into "6/9/2014") to display on the Leaderboard page. https://momentjs.com/
 
-Bootstrap - this library was used for various CSS styles, primarily buttons and the table on the Leaderboard page. https://getbootstrap.com/
+Bootstrap - this library was to apply CSS styles to various HTML elements, primarily buttons and the table on the Leaderboard page. https://getbootstrap.com/
