@@ -48,7 +48,7 @@ Bootstrap - this library was to apply CSS styles to various HTML elements, prima
 
 The formula used to calculate WPM is 
 
-![wpm formula](https://user-images.githubusercontent.com/52224377/107912288-e0bdb680-6f23-11eb-84fc-c8f9ffefc959.PNG)
+![wpm formula](https://user-images.githubusercontent.com/52224377/107912580-5fb2ef00-6f24-11eb-9704-a0054cd5b642.PNG)
 
 where Accuracy is 
 
