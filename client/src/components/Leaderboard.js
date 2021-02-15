@@ -49,6 +49,7 @@ const Leaderboard = () => {
     // clicks on any of the table column headers
         useEffect(() => {
         let temp = scores;
+            
         // Sort by: Name
         if(sortConfig.key === 'user_name') {
             temp = scores.sort(function(a, b) {
@@ -75,7 +76,7 @@ const Leaderboard = () => {
                 return a.accuracy - b.accuracy;
             }).reverse();} 
 
-        // sorting by id (same result as sorting by date)
+        // Sort by: ID (provides result as sorting by date)
         else if(sortConfig.key === 'id') {
             temp = scores.sort(function(a, b) {
                 return a.id - b.id;
