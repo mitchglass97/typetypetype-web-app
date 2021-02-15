@@ -38,7 +38,7 @@ PERN stack:
 
  - Node.js - Back-end run-time environment
 
-letteringJS - this library was used to used to place each character in the test text string into its own <span> element. This allowed animations (fading out, changing color) to be performed on individual characters by applying CSS classes to each span element based on whether the user input is correct or incorrect. Note that letteringJS requires jQuery. http://letteringjs.com/
+letteringJS - this library was used to place each character in the test text string into its own <span> element. This allowed animations (fading out, changing color) to be performed on individual characters by applying CSS classes to each span element based on whether the user input is correct or incorrect. Note that letteringJS requires jQuery. http://letteringjs.com/
   
 momentJS - this library was used to format TIMESTAMPS from PostgreSQL (e.g. turns "2013-03-01T00:00:00+01:00" into "6/9/2014") to display on the Leaderboard page. https://momentjs.com/
 
@@ -54,7 +54,7 @@ where Accuracy is
 
 ![accuracy formula](https://user-images.githubusercontent.com/52224377/107912298-e9ae8800-6f23-11eb-8d49-496fc59e5df1.PNG)
 
-Note that the reason for dividing by 5 in the WPM formula is that 5 characters is commonly used as the length of a "word" used when calulcating WPM.
+Note that the reason for dividing by 5 in the WPM formula is that 5 characters is commonly used as the length of a "word" used when calculating WPM.
 
 The formula I used is a modified version of the below formula for net WPM that I found at https://www.speedtypingonline.com/typing-equations
 
