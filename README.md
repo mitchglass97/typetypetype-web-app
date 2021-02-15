@@ -54,7 +54,9 @@ where Accuracy is
 
 ![accuracy formula](https://user-images.githubusercontent.com/52224377/107912298-e9ae8800-6f23-11eb-8d49-496fc59e5df1.PNG)
 
-This is a modified version of the below formula for net WPM that I found at https://www.speedtypingonline.com/typing-equations
+Note that the reason for dividing by 5 in the WPM formula is that 5 characters is commonly used as the length of a "word" used when calulcating WPM.
+
+The formula I used is a modified version of the below formula for net WPM that I found at https://www.speedtypingonline.com/typing-equations
 
 ![type formula](https://user-images.githubusercontent.com/52224377/107911670-9daf1380-6f22-11eb-89b4-1bb33e810cf1.png)
 
