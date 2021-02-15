@@ -56,7 +56,8 @@ app.get("/api/leaderboard", async(req,res) => {
 // CATCH-ALL. This is a fix needed due to how React Routing works. Without this,
 // if you visit https://typetypetype-webapp.herokuapp.com/leaderboard
 // without having first been on the home page (or refresh), the browser will throw a "CANNOT GET" error
-// since browser would not have any of the React or Javascript loaded.
+// since browser does not have any of the React or Javascript loaded.
+// in-depth explanation: https://ui.dev/react-router-cannot-get-url-refresh/
 app.get('*', function (req, res) {
     res.sendFile(path.resolve('/app/client/build/index.html'));
   });
