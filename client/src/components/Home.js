@@ -28,7 +28,7 @@ let timerBool = false; // boolean for when timer is started (otherwise can creat
 const Home = () => {
     const [buttonText, updateButtonText] = useState("Click to Start");
     const [wpmValue, updateWPMValue] = useState(0);
-    const [accuracy, updateAccuracy] = useState(0)
+    const [accuracy, updateAccuracy] = useState(0);
 
     function update() {
 
