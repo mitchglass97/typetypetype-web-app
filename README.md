@@ -4,7 +4,7 @@
 
 Link: https://typetypetype-webapp.herokuapp.com/
 
-*typetypetype* is a full-stack web app built with the PERN stack (PostgreSQL, Express, React and Node.js) and deployed on Heroku. The app keeps running stats of WPM and Accuracy as a user takes the typing speed test, and displays a list of all submitted scores on the Leaderboard page.
+*typetypetype* is a full-stack web app built with the PERN stack (PostgreSQL, Express, React and Node.js) and deployed on Heroku. The app calculates and displays WPM and Accuracy as a user takes the typing speed test. The app also displays a table of all submitted scores on the Leaderboard page.
 
 Each time a correct character is typed, the character fades away. If an incorrect character is typed, the character turns red and the user cannot progress until the correct character is entered.
 
