@@ -73,9 +73,9 @@ const Home = () => {
 
                 // pop-up window when  test is done. show results of test and
                 // prompt user for a name. if user enters a name and submits form, then send the data to server via a POST request
-                let result = window.prompt("Good job! Here are your final stats.\nWPM (Words Per Minute): " + tempWPM + "\nAccuracy: " + tempAccuracy + "% (" + mistakeCount + " incorrect characters out of " + charsTyped + " total keystrokes)\nEnter your name below to be added to the leaderboard!");
-                if(result != null) {
-                    const data = { user_name: result, WPM: tempWPM, accuracy: tempAccuracy};
+                let userInput = window.prompt("Good job! Here are your final stats.\nWPM (Words Per Minute): " + tempWPM + "\nAccuracy: " + tempAccuracy + "% (" + mistakeCount + " incorrect characters out of " + charsTyped + " total keystrokes)\nEnter your name below to be added to the leaderboard!");
+                if(userInput != null) {
+                    const data = { user_name: userInput, WPM: tempWPM, accuracy: tempAccuracy};
                     fetch('https://typetypetype-webapp.herokuapp.com/leaderboard', { 
                         method: 'POST', 
                         headers: {
@@ -114,12 +114,12 @@ const Home = () => {
         // start timer the first time button is clicked
         if(timerBool === false) {
             setInterval(countSecond, 1000); // create a 1-second timer
+            $(".fancy").lettering(); // lettering.js library. turns every character in string into a <span> element so they can be inidivudally animated
         }
         timerBool = true;
         if(restart) {
             window.location.reload(false); // refresh page if user clicks button after test has ended
         }
-        $(".fancy").lettering(); // lettering.js library. turns every character in string into a <span> element so they can be inidivudally animated
         update();
     }
     
@@ -134,15 +134,15 @@ const Home = () => {
             // Compare user-inputted character to the current character in the testText string
             // User has entered the correct character 
             if(e.key == testText[currChar]) {
-                document.getElementsByClassName(`char${currChar+1}`).item(0).classList.remove("wrong");
-                document.getElementsByClassName(`char${currChar+1}`).item(0).classList.add("animate");
+                document.getElementsByClassName(`char${currChar+1}`).item(0).classList.remove("incorrectCharacter");
+                document.getElementsByClassName(`char${currChar+1}`).item(0).classList.add("correctCharacter");
                 currChar++; // increment the current character
                 update();
             } 
             // User has entered the incorrect character
             else {
                 mistakeCount++;
-                document.getElementsByClassName(`char${currChar+1}`).item(0).classList.add("wrong");
+                document.getElementsByClassName(`char${currChar+1}`).item(0).classList.add("incorrectCharacter");
                 update();
             }
         }
