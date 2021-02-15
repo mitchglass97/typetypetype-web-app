@@ -14,6 +14,7 @@ const pool = require("./db"); // grab the Pool code from db.js so we can query t
 app.use(cors()); // enables CORS on our web server
 app.use(express.json()); // this gives us access to request.body and request.parameters 
 
+// Heroku Config Var
 if(process.env.NODE_ENV === 'production') {
     app.use(express.static('../client/build'));
 }
