@@ -38,7 +38,7 @@ PERN stack:
 
  - Node.js - Back-end run-time environment
 
-letteringJS - this library was used to used to animate individual letters by turning each character in a text string into its own <span> element. The animation (fade and change color) is then performed by applying the "correct" or "incorrect" CSS classes to each span element. Note that letteringJS requires jQuery. http://letteringjs.com/
+letteringJS - this library was used to used to turn each character in the test Text string into its own <span> element. This allowed animations (fading out, changing color) to be performed on individual characters by applying CSS classes to each span element based on whether the user input is correct or incorrect. Note that letteringJS requires jQuery. http://letteringjs.com/
   
 momentJS - this library was used to format TIMESTAMPS from PostgreSQL (e.g. turns "2013-03-01T00:00:00+01:00" into "6/9/2014") to display on the Leaderboard page. https://momentjs.com/
 
