@@ -43,3 +43,22 @@ letteringJS - this library was used to used to place each character in the test 
 momentJS - this library was used to format TIMESTAMPS from PostgreSQL (e.g. turns "2013-03-01T00:00:00+01:00" into "6/9/2014") to display on the Leaderboard page. https://momentjs.com/
 
 Bootstrap - this library was to apply CSS styles to various HTML elements, primarily buttons and the table on the Leaderboard page. https://getbootstrap.com/
+
+# Formula for WPM
+
+The formula used to calculate WPM is 
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{((Correct&space;Characters/5)*Accuracy)}{minutes}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{((Correct&space;Characters/5)*Accuracy)}{minutes}" title="\frac{((Correct Characters/5)*Accuracy)}{minutes}" /></a>
+
+where Accuracy is 
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=Accuracy&space;=&space;(numTotalKeystrokes-&space;numIncorrectKeystrokes)/numTotalKeystrokes" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Accuracy&space;=&space;(numTotalKeystrokes-&space;numIncorrectKeystrokes)/numTotalKeystrokes" title="Accuracy = (numTotalKeystrokes- numIncorrectKeystrokes)/numTotalKeystrokes" /></a>
+
+This is a modified version of a formula for the below formula for net WPM that I found at https://www.speedtypingonline.com/typing-equations
+
+![type formula](https://user-images.githubusercontent.com/52224377/107911670-9daf1380-6f22-11eb-89b4-1bb33e810cf1.png)
+
+I did not use this net WPM formula directly because typetypetype does not allow you to progress with an incorrect character, thus there would never be more than 1 Uncorrected Error.
+
+
+
