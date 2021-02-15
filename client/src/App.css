@@ -104,12 +104,12 @@ ul {
       }
 }
 
-.animate{
+.correctCharacter{
   animation: yourAnimation 0.1s forwards 0s linear;
   color: #357ee4;
 }
 
-.wrong{
+.incorrectCharacter{
   color: red;
   background-color: rgba(219, 35, 35, 0.575);
 }
@@ -179,7 +179,7 @@ th button {
   white-space: pre-line;
   border: 2px solid black;
   box-sizing: border-box;
-  background-color: #FFFFFF;
+  background-color: #F8F8FF;
 }
 
 #stats {
