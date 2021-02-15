@@ -30,7 +30,7 @@ The server (back-end) logic is in the server/index.js file. The file includes 3 
 
 PERN stack:
 
-PostgreSQL (Heroku Postgres)- Database
+PostgreSQL (Heroku Postgres) - Database
 
 Express - Back-end framework
 
