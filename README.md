@@ -16,7 +16,7 @@ All submitted scores are stored in a PostgreSQL (Heroku Postgres) database. Thes
 
 The main code for the front-end is in client/src/components. There are three .js files, one for each of the React components:
 
-1) Header.js is the Header/Navigation Bar component, which is always displayed at the top of the page. The header includes a logo as well as links to the Homepage, the Leaderboard page, this GitHub repository.
+1) Header.js is the Header/Navigation Bar component, which is always displayed at the top of the page. The header includes a logo as well as links to the Homepage, the Leaderboard page, and this GitHub repository!
 2) Home.js is the Home page component. The home page displays stats (WPM and Accuracy), a button to start and restart the test, and the text that the user has to type. Once a user submits their score, a POST request is made to the server with the data (user's name and their stats).
 3) Leaderboard.js is the Leaderboard component, which displays a table of all scores that have been submitted. The scores are obtained by making a GET request to the server. The leaderboard table can be sorted by clicking on any of the table headers (e.g. Name).
 
