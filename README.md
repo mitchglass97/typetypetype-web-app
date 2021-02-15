@@ -56,7 +56,7 @@ where Accuracy is
 
 Note that the reason for dividing by 5 in the WPM formula is that 5 characters is commonly used as the length of a "word" used when calculating WPM.
 
-The formula I used is a modified version of the below formula for net WPM that I found at https://www.speedtypingonline.com/typing-equations
+The formula I used is a modified version of the below formula for net WPM from https://www.speedtypingonline.com/typing-equations
 
 ![type formula](https://user-images.githubusercontent.com/52224377/107911670-9daf1380-6f22-11eb-89b4-1bb33e810cf1.png)
 
