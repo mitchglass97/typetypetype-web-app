@@ -30,13 +30,13 @@ The server (back-end) logic is in the server/index.js file. The file includes 3 
 
 PERN stack:
 
-PostgreSQL (Heroku Postgres) - Database
+ - PostgreSQL (Heroku Postgres) - Database
 
-Express - Back-end framework
+ - Express - Back-end framework
 
-React.js - Front-end framework. Used react-router-dom for front-end page routing.
+ - React.js - Front-end framework. Used react-router-dom for front-end page routing.
 
-Node.js - Back-end run-time environment
+ - Node.js - Back-end run-time environment
 
 letteringJS - this library was used to used to animate individual letters by turning each character in a text string into its own <span> element. The animation (fade and change color) is then performed by applying the "correct" or "incorrect" CSS classes to each span element. Note that letteringJS requires jQuery. http://letteringjs.com/
   
