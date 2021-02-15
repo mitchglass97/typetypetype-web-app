@@ -1,7 +1,7 @@
 // Main logic for server (back-end).
 // There are routes for:
 // 1) POST a new leaderboard score to PostgreSQL database
-// 2) GET all leaderboard scores to PostgreSQL database
+// 2) GET all leaderboard scores from PostgreSQL database
 // 3) a catch-all route that serves the index.html page
 
 const express = require("express");
