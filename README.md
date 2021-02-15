@@ -48,17 +48,14 @@ Bootstrap - this library was to apply CSS styles to various HTML elements, prima
 
 The formula used to calculate WPM is 
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{((Correct&space;Characters/5)*Accuracy)}{minutes}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{((Correct&space;Characters/5)*Accuracy)}{minutes}" title="\frac{((Correct Characters/5)*Accuracy)}{minutes}" /></a>
+![wpm formula](https://user-images.githubusercontent.com/52224377/107912288-e0bdb680-6f23-11eb-84fc-c8f9ffefc959.PNG)
 
 where Accuracy is 
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=Accuracy&space;=&space;(numTotalKeystrokes-&space;numIncorrectKeystrokes)/numTotalKeystrokes" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Accuracy&space;=&space;(numTotalKeystrokes-&space;numIncorrectKeystrokes)/numTotalKeystrokes" title="Accuracy = (numTotalKeystrokes- numIncorrectKeystrokes)/numTotalKeystrokes" /></a>
+![accuracy formula](https://user-images.githubusercontent.com/52224377/107912298-e9ae8800-6f23-11eb-8d49-496fc59e5df1.PNG)
 
-This is a modified version of a formula for the below formula for net WPM that I found at https://www.speedtypingonline.com/typing-equations
+This is a modified version of the below formula for net WPM that I found at https://www.speedtypingonline.com/typing-equations
 
 ![type formula](https://user-images.githubusercontent.com/52224377/107911670-9daf1380-6f22-11eb-89b4-1bb33e810cf1.png)
 
 I did not use this net WPM formula directly because typetypetype does not allow you to progress with an incorrect character, thus there would never be more than 1 Uncorrected Error.
-
-
-
