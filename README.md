@@ -35,7 +35,7 @@ The server (**back-end**) logic is in the server/index.js file. The file include
 
  - **Express** - Back-end framework
 
- - **React.js** - Front-end framework. Used react-router-dom for front-end page routing.
+ - **React.js** - Front-end framework. Used react-router-dom for page routing (\<Route> and \<Link>)
 
  - **Node.js** - Back-end run-time environment
 
