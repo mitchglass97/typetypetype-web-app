@@ -43,7 +43,7 @@ The server (**back-end**) logic is in the server/index.js file. The file include
   
 **momentJS** - this library was used to format TIMESTAMPS from PostgreSQL (e.g. turns "2013-03-01T00:00:00+01:00" into "03/01/2013") to display on the Leaderboard page. https://momentjs.com/
 
-**Bootstrap** - this library was used to apply CSS styles to various HTML elements, primarily buttons and the table on the Leaderboard page. https://getbootstrap.com/
+**Bootstrap** - this framework was used to apply CSS styles to various HTML elements, primarily buttons and the table on the Leaderboard page. https://getbootstrap.com/
 
 # Formula for WPM
 
