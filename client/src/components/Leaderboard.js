@@ -13,6 +13,7 @@ const Leaderboard = () => {
     const [sortConfig, setSortConfig] = useState({key: 'WPM', direction: 'ascending'}); // used to sort table based on user input
     const [load, setLoad] = useState('false'); // load is set to false until the response to our fetch request is received. 
 
+    // triggered when component is mounted
     useEffect(() => {
         getLeaderboard();
     },[]);
@@ -49,7 +50,6 @@ const Leaderboard = () => {
     // clicks on any of the table column headers
         useEffect(() => {
         let temp = scores;
-            
         // Sort by: Name
         if(sortConfig.key === 'user_name') {
             temp = scores.sort(function(a, b) {
@@ -76,7 +76,7 @@ const Leaderboard = () => {
                 return a.accuracy - b.accuracy;
             }).reverse();} 
 
-        // Sort by: ID (provides result as sorting by date)
+        // sorting by id (same result as sorting by date)
         else if(sortConfig.key === 'id') {
             temp = scores.sort(function(a, b) {
                 return a.id - b.id;
