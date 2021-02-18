@@ -10,12 +10,12 @@
 // After test is done, user is prompted to enter their name. After submitting name, their score and name is sent
 // to the database via a POST request. The scores are viewable on a sortable table on the Leaderboard page.
 
-import React, { Fragment, useState} from 'react';
+import React, { Fragment, useEffect, useState} from 'react';
 import $ from 'jquery'; // need jquery to use lettering.js library
 import lettering from "letteringjs"; // lettering.js library, used to animate individual letters by turning each character in a text string into its own <span> element
 
 const testText = "Jim and Anne will be in charge of the spring field day to be held in early June. They will ask their friends' aid to get set up. There will be games for the boys and girls. The children will want to hike, ride their bikes, and swim. This yearly event will be held in the new Peach Grove Park. Ruth has work to do on the plans for food for the day. Last year Ruth spent most of her time helping the two cooks with many snacks. Hot dogs, fries, soft drinks, ice cream, and candy apples were big sellers. Apple pie and ice cream sold well too. I hope Ruth serves the same food this year. George Long will hire the band and singer for the day. A great jazz band will play. George's mom leads the group. The jazz band is sure to be one of the big hits. George is to have them play from one to four and also in the evening. The fine songs they will play are sure to please all of us. Nice gifts will be given to all of the winners in each of the events. Local news coverage will include television and newspapers. Joyce Scott will take care of the pictures for the school paper and yearbook. Maybe the national news will do a short story on the tenth annual spring field day. The jazz band is sure to be one of the big hits.";
-let buttonText = "Click to Start Timer";
+let buttonText = "Click to Start";
 let begin = false; // boolean variable used to track whether the test has begun
 let currChar = 0; // tracks the current character, which is used to iterate through testText. increment ONLY when user enters the correct character 
 let charsTyped = 0; // total # of keystrokes
@@ -24,12 +24,39 @@ let seconds = -3; // initialize to -3 for 3-second countdown. begin test when se
 let leaderboardCheck = false;
 let restart = false;
 let timerBool = false; // boolean for when timer is started (otherwise can create multiple timers by spamming button)
+var myTimer = null; // used to create timer via setInterval. Have to initialize outside of component so we can clearInterval in useEffect when component is unmounted.
 
 const Home = () => {
+
+    // state variables, displayed on the page in <button> and <span> elements
+    // values updated in the Update() function
     const [buttonText, updateButtonText] = useState("Click to Start");
     const [wpmValue, updateWPMValue] = useState(0);
     const [accuracy, updateAccuracy] = useState(0);
 
+        // triggered when component is mounted.
+        // return function is triggered when component is unmounted
+        useEffect(() => {
+
+            // initialize variables on component mount
+            updateButtonText("Click to Start");
+            begin = false; 
+            currChar = 0; 
+            charsTyped = 0; 
+            mistakeCount = 0; 
+            seconds = -3; 
+            leaderboardCheck = false;
+            restart = false;
+            timerBool = false;
+
+            // clear the timer on unmount
+            return () => clearInterval(myTimer);
+        },[]);
+
+    // Update() calculates stats (WPM and Accuracy) and updates the state variables "wpmValue" and "accuracy",
+    // updates the "buttonText" state variable based on how much time is left in the test,
+    // sends a POST request with user's data (name and scores) when test is over and user has submitted a name
+    // function is called every 1 second, and whenever user enters a keystroke during the test.
     function update() {
 
         // Calculate stats (WPM and Accuracy)
@@ -113,7 +140,7 @@ const Home = () => {
     function testButton() {
         // start timer the first time button is clicked
         if(timerBool === false) {
-            setInterval(countSecond, 1000); // create a 1-second timer
+            myTimer = setInterval(countSecond, 1000); // create a 1-second timer
             $(".fancy").lettering(); // lettering.js library. turns every character in string into a <span> element so they can be inidivudally animated
         }
         timerBool = true;
