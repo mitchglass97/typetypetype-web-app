@@ -1,3 +1,4 @@
+*(Note: typetypetype is hosted in Heroku on a free account, so if you visit the site it may take up to 20 seconds for the app to spin up)*
 
 # About typetypetype
 
