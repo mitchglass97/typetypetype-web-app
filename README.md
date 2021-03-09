@@ -2,7 +2,7 @@
 
 # About typetypetype
 
-![typetypetype](https://user-images.githubusercontent.com/52224377/110265144-8216b600-7f80-11eb-8bb2-ad132911ce1f.PNG)
+![typetypetype](https://user-images.githubusercontent.com/52224377/110439129-b2dc1580-807c-11eb-9f41-ba706d315bcb.PNG)
 
 Link: https://typetypetype-webapp.herokuapp.com/
 
